@@ -34,7 +34,7 @@ The service can also be built by running the ```mvn install``` command in the ro
   
 * **Success Response:**
 
-    **Code:** 200 <br />
+    **Code:** 200 OK<br />
     **Content:** JSON representation of the offers <br />
     ```JSON
     { 
@@ -80,7 +80,7 @@ curl 'http://localhost:8080/offers' -H 'Accept: application/JSON'
   
 * **Success Response:**
 
-  * **Code:** 200 <br />
+  * **Code:** 200 OK<br />
     **Content:** JSON representation of the specific offer <br />
     ```JSON
     { 
@@ -126,12 +126,7 @@ curl 'http://localhost:8080/offers/1' -H 'Accept: application/JSON'
     
 * **Success Response:**
   
-  * **Code:** 201 <br />
-  ```
-  Location: http://localhost:8080/offers/1
-  Content-Length: 0
-  Date: Wed, 21 Nov 2018 22:36:24 GMT 
-  ```
+  * **Code:** 201 CREATED <br />
  
 * **Error Response:**
 
@@ -197,12 +192,8 @@ curl -X POST 'http://localhost:8080/offers' -H 'content-type: application/json' 
     
 * **Success Response:**
   
-  * **Code:** 201 <br />
-  ```
-  Location: http://localhost:8080/offers/1
-  Content-Length: 0
-  Date: Wed, 21 Nov 2018 22:36:24 GMT 
-  ```
+  * **Code:** 204 NO CONTENT RETURN <br />
+  
  
 * **Error Response:**
 
