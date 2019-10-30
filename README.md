@@ -171,7 +171,7 @@ curl 'http://localhost:8080/offers/1' -H 'Accept: application/JSON'
       
 * **Sample Call:**
 ```bash
-curl -X POST 'http://localhost:8080/offers' -H 'content-type: application/json' --data $'{\n        "description": "A cheap offer",\n        "expirationDate": "2018-11-22T20:47:40.603Z",\n        "price": 10.5,\n        "status": "OPEN"\n}'
+curl -X POST 'http://localhost:8080/offers' -H 'content-type: application/json' --data $'{\n        "description": "A cheap offer",\n        "expirationDate": "2030-11-22T20:47:40.603Z",\n        "price": 10.5,\n        "status": "OPEN"\n}'
 ```
 
 ### URL: `/offers/{id}`
